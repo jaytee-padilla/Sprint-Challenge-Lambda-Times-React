@@ -48,7 +48,6 @@ export default class Content extends Component {
   if (this.state.selected === 'all') {
     return this.state.cards;
   } else {
-    console.log(this.state.selected)
     const filteredCards = this.state.cards.filter(card => card.tab.toLowerCase().includes(this.state.selected));
 
     return filteredCards;
