@@ -3,10 +3,12 @@ import uuid from 'uuid';
 import Card from './Card';
 
 const Cards = props => {
+  console.log(props)
   return (
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 
           new Card component for each passing the card as the only prop*/}
+
           {props.cards.map(card => <Card card={card} key={uuid.v4()} />)}
     </div>
   )
